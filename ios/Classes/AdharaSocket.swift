@@ -113,6 +113,7 @@ public class AdharaSocketIOClientConfig: NSObject{
     public var query:[String:String]
     public var path:String
     public var enableLogging:Bool
+    public var secure:Bool
     
     init(_ adharaId:Int, uri:String, namespace:String, path:String) {
         self.adharaId = adharaId
@@ -121,6 +122,7 @@ public class AdharaSocketIOClientConfig: NSObject{
         self.query = [String:String]()
         self.path = path
         self.enableLogging = false
+        self.secure = true
     }
     
 }
